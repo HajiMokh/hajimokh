@@ -1,4 +1,4 @@
--- Hextor_ch
+-- HMbot_haji
 do
 
 local function send_title(cb_extra, success, result)
@@ -26,11 +26,11 @@ return {
     "!tex [equation]: Convert LaTeX equation to image"
   },
   patterns = {
-    "^!sticker (.+) (.+)$"
+    "^(استیکر) (.*) (.+)$",
   },
   run = run
 }
 
 end
---By @hhmbot_haji
-@Hextor_admin
+--By @hhmbot_Haji
+@HMbot_Haji
