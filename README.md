@@ -1,4 +1,4 @@
-#[TeleSurena](https://telegram.me/SurenaTeam)
+#[HMbot_Haji](https://telegram.me/SurenaTeam)
 
 #کلون یا هرگونه کپی برداری بدون ذکر منبع ممنوع و حلال نمی باشد
 
