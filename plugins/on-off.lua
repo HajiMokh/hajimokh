@@ -17,13 +17,13 @@ local function enable_channel(receiver)
 	end
 
 	if _config.disabled_channels[receiver] == nil then
-		return "ربات خاموش نمی باشد!"
+		return "آنلاینم حاجی!"
 	end
 	
 	_config.disabled_channels[receiver] = false
 
 	save_config()
-	return "ربات روشن شد!"
+	return "آنلاینم حاجی!"
 end
 
 local function disable_channel( receiver )
@@ -34,7 +34,7 @@ local function disable_channel( receiver )
 	_config.disabled_channels[receiver] = true
 
 	save_config()
-	return "ربات خاموش شد!"
+	return "آفلاینم حاجی!"
 end
 
 local function pre_process(msg)
@@ -65,11 +65,11 @@ local function run(msg, matches)
 	if not is_owner(msg) then
 	return 'شما صاحب گروه نمی باشید!'
 	end
-	if matches[1] == 'فعال' then
+	if matches[1] == 'آنلاینی؟' then
 		return enable_channel(receiver)
 	end
 	-- Disable a channel
-	if matches[1] == 'غیر فعال' then
+	if matches[1] == 'آفلاین' then
 		return disable_channel(receiver)
 	end
 end
